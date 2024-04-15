@@ -25,7 +25,6 @@ FILES:${PN} = ""
 # explicitly listed, so that they can be disabled and make the build slightly
 # faster.
 PACKAGECONFIG ?= " \
-        ${@incompatible_license_contains('GPL-3.0', '', 'boblight', d)} \
         nuki \
         onewire \
         serialportcommander \
@@ -33,7 +32,6 @@ PACKAGECONFIG ?= " \
         "
 
 # PACKAGECONFIG options should **never** set WITH_PLUGINS in the leftmost argument
-PACKAGECONFIG[boblight] = ", WITHOUT_PLUGINS+=boblight, boblight"
 PACKAGECONFIG[nuki] = ", WITHOUT_PLUGINS+=nuki, libsodium"
 PACKAGECONFIG[onewire] = ", WITHOUT_PLUGINS+=onewire, owfs"
 PACKAGECONFIG[serialportcommander] = ", WITHOUT_PLUGINS+=serialportcommander, qtserialport"
