@@ -7,9 +7,9 @@ LICENSE = "LGPL-3.0-only | NYMEA-COMMERCIAL"
 LIC_FILES_CHKSUM="file://LICENSE.LGPL3;md5=3000208d539ec061b899bce1d9ce9404"
 
 SRC_URI="git://github.com/nymea/libnymea-networkmanager.git;protocol=https;branch=master"
-# Release: 1.9.1
-SRCREV = "2b1789c5cc73ece5e0d2fb202cc4503221c142ca"
-PV = "1.9.1-git${SRCPV}"
+# Release: 1.9.2
+SRCREV = "3d22589c2c755e899dcba33163a3e3877b9c3aed"
+PV = "1.9.2-git${SRCPV}"
 
 DEPENDS += "qtbase qtconnectivity"
 
