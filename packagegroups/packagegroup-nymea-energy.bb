@@ -4,12 +4,20 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
+PACKAGES += "${PN}-default-plugins"
+
 RDEPENDS:${PN} = " \
     nymead \
     nymea-data \
     nymea-experience-plugin-energy \
     nymea-system-plugin-systemd \
     nymea-zeroconf-plugin-avahi \
+    nymea-plugin-generic-genericcar \
+    nymea-plugin-common-pushnotifications \
+    ${PN}-default-plugins \
+"
+
+RDEPENDS:${PN}-default-plugins = " \
     nymea-plugin-common-easee \
     nymea-plugin-common-evbox \
     nymea-plugin-common-everest \
@@ -20,7 +28,6 @@ RDEPENDS:${PN} = " \
     nymea-plugin-common-openweathermap \
     nymea-plugin-common-powerfox \
     nymea-plugin-common-shelly \
-    nymea-plugin-generic-genericcar \
     nymea-plugin-modbus-bgetech \
     nymea-plugin-modbus-huawei \
     nymea-plugin-modbus-inepro \
