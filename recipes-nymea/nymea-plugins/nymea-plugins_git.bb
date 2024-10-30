@@ -7,9 +7,9 @@ LICENSE = "LGPL-3.0-only | NYMEA-COMMERCIAL"
 LIC_FILES_CHKSUM = "file://LICENSE.LGPL3;md5=3000208d539ec061b899bce1d9ce9404"
 
 SRC_URI = "git://github.com/nymea/nymea-plugins.git;protocol=https;branch=master"
-# Release: 1.9.4
-SRCREV = "7c4af8cd2cebeccfa438afdf185208dfba18d123"
-PV = "1.9.4-git${SRCPV}"
+# Release: 1.9.5
+SRCREV = "a35312b7f21f40a42bb419c507dff46d0fb2ba1f"
+PV = "1.9.5-git${SRCPV}"
 
 DEPENDS += "nymea nymea-native"
 
