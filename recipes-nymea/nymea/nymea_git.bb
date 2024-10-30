@@ -11,9 +11,9 @@ LIC_FILES_CHKSUM=" \
 
 SRC_URI = "git://github.com/nymea/nymea.git;protocol=https;branch=master"
 SRC_URI+= "file://init"
-# Release: 1.9.4
-SRCREV = "36adad329f87a97930363bcf1e774cc030c47c95"
-PV = "1.9.4-git${SRCPV}"
+# Release: 1.9.5
+SRCREV = "4fe03a10ea31734e9213efe4673deed9967b5bd9"
+PV = "1.9.5-git${SRCPV}"
 
 inherit qmake5 pkgconfig systemd update-rc.d
 
