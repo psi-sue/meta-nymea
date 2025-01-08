@@ -39,3 +39,5 @@ do_install:append:class-target() {
 FILES:${PN}-test = "${libdir}/nymea/plugins/libnymea_integrationpluginmock.so \
 	/usr/tests/*"
 PACKAGES += "${PN}-test"
+
+CXXFLAGS:append = " -Wno-deprecated-copy -Wno-dangling-reference -Wno-overloaded-virtual"

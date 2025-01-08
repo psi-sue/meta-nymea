@@ -48,3 +48,5 @@ FILES:${PN} = ""
 
 # Dynamically generate packages for all enabled plugins
 PACKAGES_DYNAMIC = "^nymea-plugin-(?!zigbee).*"
+
+CXXFLAGS:append = " -Wno-overloaded-virtual"

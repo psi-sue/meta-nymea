@@ -17,5 +17,7 @@ DEPENDS += "qtbase qtserialport eudev"
 
 S = "${WORKDIR}/git"
 
+CXXFLAGS:append = " -Wno-overloaded-virtual"
+
 inherit qmake5
 

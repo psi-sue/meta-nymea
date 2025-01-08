@@ -19,4 +19,6 @@ PACKAGES += "${PN}-utils"
 FILES:${PN} = "${libdir}/*.so.*"
 FILES:${PN}-utils = "${bindir}/*"
 
+CXXFLAGS:append = " -Wno-deprecated-copy"
+
 inherit qmake5
